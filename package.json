@@ -1,0 +1,33 @@
+{
+    "name": "api-dio-shopping",
+    "version": "1.0.0",
+    "description": "Projeto de front end + backend desenvolvido  junto ao bootcamp da DIO Banco Inter front end developer",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leonardoaguirre/api-dio-shopping.git"
+    },
+    "author": "Leonardo Vinicius Aguirre",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leonardoaguirre/api-dio-shopping/issues"
+    },
+    "homepage": "https://github.com/leonardoaguirre/pi-dio-shopping#readme",
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/uuid": "^8.3.1",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "reflect-metadata": "^0.1.13",
+        "sqlite3": "^5.0.2",
+        "typeorm": "^0.2.34",
+        "uuid": "^8.3.2"
+    }
+}
