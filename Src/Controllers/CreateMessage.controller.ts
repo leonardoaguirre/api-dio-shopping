@@ -6,9 +6,13 @@ export class CreateMessageController {
         const { email, message } = request.body
 
         const createMessageService = new CreateMessageService()
+        try {
+            await createMessageService.execute({ email, message })
 
-        const newMsg = await createMessageService.execute({ email, message })
+            return reponse.status(201).json('Inserido com sucesso!')
 
-        return reponse.json(newMsg)
+        } catch (error) {
+            return reponse.status(400).json(error)
+        }
     }
 }
