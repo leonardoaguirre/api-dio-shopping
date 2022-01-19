@@ -4,7 +4,9 @@
     "description": "Projeto de front end + backend desenvolvido  junto ao bootcamp da DIO Banco Inter front end developer",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "ts-node-dev src/server.ts",
+        "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
     },
     "repository": {
         "type": "git",
