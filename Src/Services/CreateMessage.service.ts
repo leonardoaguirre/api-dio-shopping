@@ -6,17 +6,23 @@ export class CreateMessageService {
     async execute({ email, message }: IMessage) {
         const messageRepository = getCustomRepository(MessageRepository)
 
-        if (!email) {
-            throw new Error("Por favor Informe um email")
-        }
-        if (!message) {
-            throw new Error("Por favor escreva uma mensagem")
-        }
+        try {
+            if (!email) {
+                throw new Error("Por favor Informe um email")
+            }
+            if (!message) {
+                throw new Error("Por favor escreva uma mensagem")
+            }
 
-        const newMsg = messageRepository.create({
-            email,
-            message
-        })
-        return newMsg
+            const newMsg = messageRepository.create({
+                email,
+                message
+            })
+
+            await messageRepository.save(newMsg)
+
+        } catch (error) {
+            throw error
+        }
     }
 }
