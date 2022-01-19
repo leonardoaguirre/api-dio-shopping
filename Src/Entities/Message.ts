@@ -1,17 +1,18 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("messages")
-export default class Message {
+@Entity("Message")
+class Message {
     @PrimaryGeneratedColumn("uuid")
-    readonly id : string;
+    readonly id: string;
 
     @Column()
     email: string;
 
     @Column()
-    message : string;
+    message: string;
 
     @CreateDateColumn()
-    created_at : Date;
+    created_at: Date;
 
 }
+export { Message }

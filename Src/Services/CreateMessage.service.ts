@@ -1,6 +1,6 @@
 import { getCustomRepository } from "typeorm";
 import { IMessage } from "../Interfaces/IMessage.interface";
-import { MessageRepository } from "../Repositories/Messages.Repository";
+import { MessageRepository } from "../Repositories/Message.repository";
 
 export class CreateMessageService {
     async execute({ email, message }: IMessage) {

@@ -1,5 +1,5 @@
 import { getCustomRepository } from "typeorm";
-import { MessageRepository } from "../Repositories/Messages.Repository";
+import { MessageRepository } from "../Repositories/Message.repository";
 
 
 export class ListMessageService {
