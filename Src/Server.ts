@@ -3,6 +3,7 @@ import Express from "express"
 import cors from "cors"
 import { Constantes } from "./Constants"
 import { router } from "./Routes/Main.routes"
+import './Database'
 
 const app = Express()
 
