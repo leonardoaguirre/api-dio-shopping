@@ -7,6 +7,6 @@ router.get('/', (request: Request, response: Response) => {
     return response.json({ message: 'Bem vindo a API do DIO Shopping' })
 })
 
-router.use(messageRoutes)
+router.use('/message', messageRoutes)
 
 export { router }

@@ -8,7 +8,7 @@ const messageRoutes = Router()
 const createMessageController = new CreateMessageController()
 const listMessageController = new ListMessageController()
 
-router.get('/message', listMessageController.handle)
-router.post('/message', createMessageController.handle)
+messageRoutes.get('', listMessageController.handle)
+messageRoutes.post('', createMessageController.handle)
 
 export { messageRoutes }
